@@ -12,7 +12,7 @@ if [ ! -d $BUILD_FOLDER ] ; then
 fi
 
 # Set Docker run base command
-DOCKER_IMG_NAME=mpc_quizzes
+DOCKER_IMG_NAME=carlosgalvezp/mpc_quizzes
 DOCKER_RUN_BASE="docker run --volume=$SCRIPT_DIR:$SCRIPT_DIR     \
                             --workdir=$BUILD_FOLDER              \
                             --user=$UID:$GROUPS $DOCKER_IMG_NAME"
