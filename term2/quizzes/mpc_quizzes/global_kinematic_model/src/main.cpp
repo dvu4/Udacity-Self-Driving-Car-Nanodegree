@@ -12,7 +12,6 @@ double rad2deg(double x) { return x * 180 / pi(); }
 
 const double Lf = 2;
 
-// TODO: Implement the global kinematic model.
 // Return the next state.
 //
 // NOTE: state is [x, y, psi, v]
@@ -20,6 +19,20 @@ const double Lf = 2;
 Eigen::VectorXd globalKinematic(Eigen::VectorXd state,
                                 Eigen::VectorXd actuators, double dt) {
   Eigen::VectorXd next_state(state.size());
+
+  const double x   = state[0U];
+  const double y   = state[1U];
+  const double phi = state[2U];
+  const double v   = state[3U];
+
+  const double delta = actuators[0U];
+  const double a     = actuators[1U];
+
+  next_state[0U] = x + v * std::cos(phi) * dt;
+  next_state[1U] = y + v * std::sin(phi) * dt;
+  next_state[2U] = phi + (v / Lf) * delta * dt;
+  next_state[3U] = v + a * dt;
+
   return next_state;
 }
 
