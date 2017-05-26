@@ -2,8 +2,8 @@
 #include <math.h>
 #include <cppad/cppad.hpp>
 #include <cppad/ipopt/solve.hpp>
-#include "Eigen-3.3/Eigen/Core"
-#include "Eigen-3.3/Eigen/QR"
+#include <Eigen/Core>
+#include <Eigen/QR>
 #include "matplotlibcpp.h"
 
 namespace plt = matplotlibcpp;
