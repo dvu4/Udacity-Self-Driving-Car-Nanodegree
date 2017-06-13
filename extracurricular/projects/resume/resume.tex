@@ -1,0 +1,247 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+% 
+% Modified by: Carlos Galvez. Doesn't require XeLaTeX anymore
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\usepackage{fourier}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage[utf8]{inputenc}
+
+\usepackage{fullpage}
+\usepackage[top=2.0cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\def \widthone {3.1cm}
+\def \widthtwo {12.3cm}
+\def \vspac {0.25cm}
+\usepackage[backend=bibtex,isbn=false,doi=false]{biblatex}
+\addbibresource{cv.bib}
+
+\hyphenation{ca-meras si-mulation}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Carlos Gálvez}\bigskip\par} % Your name
+
+\section{Personal Information}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|L{\widthtwo}}
+\textsc{Date of Birth} & December 29\textsuperscript{th}  1991  \\
+\textsc{Nationality} & Spanish \\
+\textsc{Address} & Prinsgatan 11, Lgh 1401, 413 05 Gothenburg, Sweden\\
+\textsc{Mobile Phone} & +46 72 966 9146\\
+\textsc{E-mail} & \href{mailto:carlosgalvezp@gmail.com}{carlosgalvezp@gmail.com}
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Education}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|p{\widthtwo}}	
+\textsc{Oct} 2016 - \textsc{Present} & \textbf{Self-Driving Car Engineer Nanodegree} \\
+& \textsc{Udacity}. \\
+& Deep Learning, Computer Vision, Sensor Fusion, Localization and Mapping, Control.\\
+& \\
+
+%------------------------------------------------
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Systems, Control and Robotics, MSc} \\
+& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden. \\ 
+& Master's Thesis on Sensor Fusion for Autonomous Driving \cite{Galvez2015Thesis}.\\
+& Advisor: Prof. John \textsc{Folkesson}, Examiner: Prof. Patric \textsc{Jensfelt}. \\
+& \textsc{GPA}: A.\\
+& \\
+%------------------------------------------------
+
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Civilingenjörsutbilding, MSc Electrical Engineering} \\
+& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden. \\
+&\\
+
+%------------------------------------------------
+
+\textsc{Jul} 2014 - \textsc{Aug} 2014 & \textbf{Tohoku University Engineering Summer Programme (TESP)} \\
+& \textsc{Tohoku University}, Sendai, Japan.\\
+& Lectures and seminars related to Robotics. Project: lidar-based obstacle avoidance. \\
+&\\
+
+%------------------------------------------------
+
+\textsc{Sep} 2009 - \textsc{Jun} 2015 & \textbf{Telecommunication Engineering, (5-year programme, MSc accredited by ABET)} \\
+& \textsc{E.T.S.I. Telecomunicación, Universidad Politécnica de Madrid}, Spain. \\
+& GPA: 9.20/10.0.\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Experience}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|p{\widthtwo}}
+\textsc{Aug} 2015 - \textsc{Present}& \textbf{Software Developer - Sensor Fusion} at \textsc{Volvo Car Corporation}, Sweden\\
+& Development of algorithms for sensor data fusion, including lidar, radar and camera, in the context of Volvo Cars' autonomous driving project \emph{Drive Me}. Experience in high-perfomance computing, safety-critical code as well as the ISO 26262 standard. Agile development and continuous integration workflow.  \\
+&\\
+%------------------------------------------------
+
+\textsc{Jun} 2014 - \textsc{Jul} 2014 & \textbf{Research Engineer} at \textsc{Computer Vision and Active Perception Lab}, KTH, Sweden\\
+& Development of an autonomous robot to perform 3D mapping with RGBD cameras in hardly accesible environments. Based on ROS, OpenCV and PCL.\\
+&\\
+
+% --------------------------------------------------
+
+\textsc{Oct} 2012 - \textsc{Oct} 2013 & \textbf{Fellowship} at \textsc{Signals and Systems Department}, ETSIT-UPM, Spain\\
+& Development of a vision-based parking occupancy estimation system, using OpenCV and Qt libraries. Involved in the national project \emph{Ciudad 2020}, related to smart cities. Scientific paper published at IET-ITS \cite{Galvez2015}. \\
+&\\
+% --------------------------------------------------
+
+\textsc{Oct} 2011 - \textsc{Oct} 2012 & \textbf{Fellowship} at \textsc{Electrical Engineering Department}, ETSIT-UPM, Spain\\
+& Development and integration of a new educational hardware platform for the study of ARM microcontrollers at the Electronic Systems Laboratory.\\
+
+% --------------------------------------------------
+&\\
+\textsc{Oct} 2009 - \textsc{Oct} 2010 &  \textbf{Fellowship} at \textsc{Telematic Engineering Department}, ETSIT-UPM, Spain\\
+& Design of an optical handwritten character recognition system (OCR), with the aim of automatizing various teaching and administrative tasks.\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|p{\widthtwo}}
+\textsc{Jan} 2017 - \textsc{Feb} 2017& \textbf{Vision-based lane marking and vehicle detection for autonomous driving}.\\& Application of Computer Vision and Machine Learning techniques.\\
+& \\
+
+\textsc{Dec} 2016 - \textsc{Jan} 2017& \textbf{Behavioral cloning for autonomous driving}. \\ & Application of Convolutional Neural Networks to predict steering angle from images.\\
+& \\
+
+\textsc{Nov} 2016 - \textsc{Dec} 2016& \textbf{Traffic sign recognition using Deep Learning}.\\ & Achieved 95.8\% accuracy on test set.\\
+& \\
+
+\textsc{Mar} 2015 - \textsc{Jun} 2015 & \textbf{Face detector}.\\ & Image-based, combining Adaboost and Deep Learning. \\
+& \\
+\textsc{Oct} 2014 - \textsc{Dec} 2014 & \textbf{Maze exploration robot}.\\ & Control, 3D object recognition, mapping, localization and planning.\\
+& \\
+
+\textsc{Sep} 2012 - \textsc{Jan} 2013 & \textbf{Augmented Reality mobile application}.\\ & Real-time visual tracking and control of robots. \\
+& \\
+
+
+\textsc{Sep} 2011 - \textsc{Jan} 2012 & \textbf{Adversarial learning through genetic algorithms}. \\ & Predator-prey robot learning simulation.\\
+
+\end{tabular} 
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Honours and Awards}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|L{\widthtwo}}
+2015 & Winner of the robot contest for the course \emph{Robotics and Autonomous Systems}.\\
+2009 - 2013 & Extraordinary Academic Performance Scholarship (Madrid Government).\\
+2009 &  Highest Honours in High School. Best academic record (GPA: 10.0/10.0). \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Languages}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|L{4.75cm} R{7cm}}
+\textsc{Spanish:} & Mothertongue&\\
+\textsc{English:} & Fluent &\emph{TOEFL iBT: 110/120, September 2012 (Spain)} \\
+\textsc{Swedish:} & Advanced & \emph{CEFR: B2, June 2015 (Sweden)}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Computer skills}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|L{\widthtwo}}
+\textsc{Proficient} & C/C++, Python, \textsc{Matlab} \& \textsc{Simulink}, OpenCV, PCL, ROS.\\
+\textsc{Intermediate} & Java, CMake, OpenGL, OpenCL, CUDA, Qt, Bash, Git, Gerrit, \LaTeX, Linux.\\
+\textsc{Basic} & HTML, CSS, JavaScript, J2EE, SQL, Android, ASM, VHDL.\\
+\end{tabular}\vspace{\vspac}
+\noindent
+GitHub repository: \href{https://github.com/carlosgalvezp}{https://github.com/carlosgalvezp}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Interests}
+\vspace{\vspac}
+\noindent
+Travelling, photography, hiking, cycling, reading, movies, music.  \\
+\noindent
+Learning through online courses (MOOC): Coursera, Udacity, edX, etc.
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Publications}
+\noindent
+\begingroup
+\renewcommand{\section}[2]{}%
+%\renewcommand{\chapter}[2]{}% for other classes
+\printbibliography[heading=bibintoc]
+\endgroup
+%----------------------------------------------------------------------------------------
+\end{document}
