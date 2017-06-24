@@ -16,3 +16,13 @@
 build
 
 CMakeLists.txt.user*
+
+# LaTeX artifacts
+*blx.bib
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.run.xml
+*.synctex.gz
